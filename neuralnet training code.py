@@ -12,8 +12,8 @@ import numpy as np
 
 augmentations = transforms.Compose([transforms.ToTensor()])
 
-train_dataset = MNIST(r"C:\Users\noahg\OneDrive\Documents\Coding Stuff\MNIST diffusion", download=True, train=True, transform=augmentations)
-test_dataset = MNIST(r"C:\Users\noahg\OneDrive\Documents\Coding Stuff\MNIST diffusion", download=True, train=False, transform=augmentations)
+train_dataset = MNIST(**insert file path to dataset**, download=True, train=True, transform=augmentations)
+test_dataset = MNIST(**insert file path to dataset**, download=True, train=False, transform=augmentations)
 
 device = torch.device("cuda")
 
@@ -109,3 +109,4 @@ with open("weights.txt", "w") as file:
     b2 = model.layer2.bias.data.cpu().numpy()
     file.write(f"Weights Layer 2:\n{np.array2string(w2, separator=', ')}\n\n")
     file.write(f"Bias Layer 2:\n{np.array2string(b2, separator=', ')}\n\n")
+
