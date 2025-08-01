@@ -1,0 +1,27 @@
+	section .icon
+
+	jp	___prgm_init
+	db	$01
+	public ___icon
+___icon:
+	db	$10, $10
+	db	$FF, $FF, $FF, $FF, $DE, $B4, $20, $21, $21, $20, $94, $DF, $DF, $FF, $FF, $FF
+	db	$FF, $FF, $FF, $B5, $20, $6A, $F5, $CB, $D4, $F5, $6A, $20, $B5, $FF, $FF, $FF
+	db	$FF, $FF, $B5, $4A, $F5, $DE, $F6, $F6, $FF, $FF, $D6, $FD, $69, $94, $FF, $FF
+	db	$FF, $B5, $4A, $FD, $FF, $FF, $DF, $D5, $D5, $DF, $FF, $FF, $F3, $69, $B5, $FF
+	db	$DF, $01, $F5, $FF, $FF, $FF, $6B, $01, $20, $6B, $FF, $FF, $F5, $F3, $20, $DF
+	db	$94, $69, $D6, $FF, $FF, $6B, $22, $44, $44, $22, $4B, $FF, $FF, $F4, $6A, $B4
+	db	$20, $D3, $FE, $FE, $6B, $22, $44, $6D, $AE, $6D, $22, $6B, $FF, $FF, $F5, $00
+	db	$21, $D4, $F5, $B5, $01, $65, $23, $29, $FE, $AF, $44, $00, $B5, $FF, $D5, $21
+	db	$21, $D5, $FF, $B5, $00, $45, $43, $00, $41, $6D, $45, $00, $B5, $FF, $D4, $21
+	db	$20, $D4, $FF, $FE, $6A, $22, $44, $23, $23, $44, $22, $4B, $DF, $FF, $F4, $20
+	db	$8C, $89, $D6, $FF, $FF, $6A, $22, $65, $65, $23, $4A, $FF, $FF, $F6, $6B, $94
+	db	$DF, $21, $F5, $FE, $F5, $FF, $4B, $00, $00, $4A, $FF, $F5, $FE, $F5, $20, $DE
+	db	$FF, $95, $69, $F4, $F6, $FF, $DF, $B5, $B5, $FE, $FF, $F6, $F4, $4A, $B4, $FF
+	db	$FF, $FF, $94, $6A, $FE, $FE, $F6, $F5, $FF, $FF, $F6, $FE, $6A, $93, $FF, $FF
+	db	$FF, $FF, $FF, $B4, $21, $89, $F4, $F4, $F5, $FD, $8A, $20, $B4, $FF, $FF, $FF
+	db	$FF, $FF, $FF, $FF, $D6, $94, $20, $21, $21, $21, $94, $B6, $FF, $FF, $FF, $FF
+	public ___description
+___description:
+	db	"neural network", 0
+___prgm_init:
