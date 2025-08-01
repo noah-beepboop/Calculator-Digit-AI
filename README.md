@@ -21,3 +21,5 @@ Use the arrows to move your cursor. <br>
 The clear button clears your drawing. <br>
 (2nd + mode) to quit. <br>
 Sometimes it might not take input but do not panick! Just wait for it to finish evaluating the drawing and try again!
+
+###### This project is not super polished but I just want to finish it
