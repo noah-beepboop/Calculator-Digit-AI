@@ -98,18 +98,18 @@ epoch_loss = running_loss / total
 epoch_accuracy = correct / total * 100
 print(f"Epoch [{epoch + 1}/{epochs}] - Loss: {epoch_loss:.4f}, Accuracy: {epoch_accuracy:.2f}%")
 
-# np.set_printoptions(threshold=np.inf)
-# with open("weights.txt", "w") as file:
-#     np.set_printoptions(precision=3, suppress=True)
+np.set_printoptions(threshold=np.inf)
+with open("weights.txt", "w") as file:
+    np.set_printoptions(precision=3, suppress=True)
 
-#     # Layer 1
-#     w1 = model.layer1.weight.data.cpu().numpy()
-#     b1 = model.layer1.bias.data.cpu().numpy()
-#     file.write(f"Weights Layer 1:\n{np.array2string(w1, separator=', ')}\n\n")
-#     file.write(f"Bias Layer 1:\n{np.array2string(b1, separator=', ')}\n\n")
+    # Layer 1
+    w1 = model.layer1.weight.data.cpu().numpy()
+    b1 = model.layer1.bias.data.cpu().numpy()
+    file.write(f"Weights Layer 1:\n{np.array2string(w1, separator=', ')}\n\n")
+    file.write(f"Bias Layer 1:\n{np.array2string(b1, separator=', ')}\n\n")
 
-#     # Layer 2
-#     w2 = model.layer2.weight.data.cpu().numpy()
-#     b2 = model.layer2.bias.data.cpu().numpy()
-#     file.write(f"Weights Layer 2:\n{np.array2string(w2, separator=', ')}\n\n")
+    # Layer 2
+    w2 = model.layer2.weight.data.cpu().numpy()
+    b2 = model.layer2.bias.data.cpu().numpy()
+    file.write(f"Weights Layer 2:\n{np.array2string(w2, separator=', ')}\n\n")
 #     file.write(f"Bias Layer 2:\n{np.array2string(b2, separator=', ')}\n\n")
