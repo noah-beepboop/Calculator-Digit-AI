@@ -81,19 +81,15 @@ for images, labels in test_dataloader:
     images = images.to(device)
     labels = labels.to(device)
 
-    # Forward pass
     outputs = model(images)
     loss = criterion(outputs, labels)
 
-    # Accumulate loss
     running_loss += loss.item() * images.size(0)
 
-    # Compute accuracy
     _, predicted = torch.max(outputs, 1)
     correct += (predicted == labels).sum().item()
     total += labels.size(0)
 
-# Epoch metrics
 epoch_loss = running_loss / total
 epoch_accuracy = correct / total * 100
 print(f"Epoch [{epoch + 1}/{epochs}] - Loss: {epoch_loss:.4f}, Accuracy: {epoch_accuracy:.2f}%")
@@ -112,4 +108,4 @@ with open("weights.txt", "w") as file:
     w2 = model.layer2.weight.data.cpu().numpy()
     b2 = model.layer2.bias.data.cpu().numpy()
     file.write(f"Weights Layer 2:\n{np.array2string(w2, separator=', ')}\n\n")
-#     file.write(f"Bias Layer 2:\n{np.array2string(b2, separator=', ')}\n\n")
+    file.write(f"Bias Layer 2:\n{np.array2string(b2, separator=', ')}\n\n")
