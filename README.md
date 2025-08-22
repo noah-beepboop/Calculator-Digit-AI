@@ -23,3 +23,11 @@ The clear button clears your drawing. <br>
 Sometimes it might not take input but do not panick! Just wait for it to finish evaluating the drawing and try again!
 
 ###### This project is not super polished but I just want to finish it
+
+### Here are some examples of the program at work:
+
+![Demo Image](demo-image-1.png)
+
+![Demo Image](demo-image-2.png)
+
+![Demo Image](demo-image-3.png)
