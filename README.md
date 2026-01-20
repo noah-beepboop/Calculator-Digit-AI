@@ -10,10 +10,10 @@ It might work with other calculators but I have no idea. <br>
 
 ## How to use:
 
-- Take the DigitAI.8xp file out of the bin and use TI Connect CE to send it over to your calculator.
-- Your calculator needs to have a special shell so that it can run assembly. There are many guides on how to get this online.
-- Once your calculator has a special shell download [CE libraries](https://github.com/CE-Programming/libraries/releases/latest) for your calculator
-- Run DIGITAI.8xp using the special shell.
+- Download DigitAI.8xp and use TI Connect CE to send it over to your calculator.
+- Your calculator likely needs to be jailbroken to have the ability to run assembly programs. There are many guides to do this using [arTIfiCE](https://yvantt.github.io/arTIfiCE/).
+- Once your calculator has been jailbroken download [CE libraries](https://github.com/CE-Programming/libraries/releases/latest) for your calculator.
+- Run DIGITAI.8xp using a arTIfiCE.
 
 #### Controls: 
 
